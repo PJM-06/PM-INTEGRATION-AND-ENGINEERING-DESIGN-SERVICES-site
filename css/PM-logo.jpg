@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PM INTEGRATION AND ENGINEERING DESIGN SERVICES</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="PM Integration and Engineering Design Services - Electrical design, lighting simulation, BOQ, thesis prototyping and more.">
+</head>
+<body class="bg-white text-gray-900 scroll-smooth">
+
+  <!-- NAV -->
+  <nav class="bg-royal-blue text-white shadow">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/PM-logo.png" alt="PM Logo" class="w-10 h-10 object-contain">
+          <span class="font-bold text-lg md:text-xl">PM INTEGRATION &amp; DESIGN</span>
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="hover:text-red-300">Home</a>
+          <a href="projects.html" class="hover:text-red-300">Projects</a>
+          <a href="#about" class="hover:text-red-300">About</a>
+          <a href="#services" class="hover:text-red-300">Services</a>
+          <a href="#contact" class="hover:text-red-300">Contact</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button id="navToggle" class="md:hidden p-2 rounded bg-white/10 hover:bg-white/20">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu (hidden by default) -->
+      <div id="mobileMenu" class="hidden md:hidden pb-4">
+        <a href="index.html" class="block py-2 hover:text-red-300">Home</a>
+        <a href="projects.html" class="block py-2 hover:text-red-300">Projects</a>
+        <a href="#about" class="block py-2 hover:text-red-300">About</a>
+        <a href="#services" class="block py-2 hover:text-red-300">Services</a>
+        <a href="#contact" class="block py-2 hover:text-red-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative text-center py-20 px-6 bg-cover bg-center" style="background-image: url('assets/PM-logo.png'); background-size: 400px; background-repeat: no-repeat; background-position: center;">
+    <div class="absolute inset-0 bg-white bg-opacity-90"></div>
+    <div class="relative z-10 max-w-3xl mx-auto animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl font-bold royal-blue mb-4">PM INTEGRATION AND ENGINEERING DESIGN SERVICES</h1>
+      <p class="text-lg text-gray-700 mb-6">Engineering precision meets creative design. Full-spectrum electrical and electronics solutions — system design to field implementation.</p>
+      <div class="flex items-center justify-center gap-4">
+        <button onclick="toggleForm()" class="bg-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition transform hover:scale-105">
+          Request a Consultation & Quotation
+        </button>
+        <a href="projects.html" class="bg-royal-blue text-white border border-white px-6 py-3 rounded-full font-semibold hover:bg-transparent hover:text-white transition">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-12 bg-gray-50 text-black">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold royal-blue mb-4">About Us</h2>
+      <p class="mb-4">PM INTEGRATION AND ENGINEERING DESIGN SERVICES is a dynamic, multi-disciplinary engineering firm based in the Philippines that focuses on delivering high-quality, code-compliant, and technically sound electrical design solutions for residential, commercial, and industrial developments.</p>
+      <p class="mb-4">Our core expertise: load computations, voltage drop analysis, short circuit & fault current studies, lighting simulations (Dialux/Relux), CAD construction drawings, panelboard schedules and single-line diagrams — all aligned with the Philippine Electrical Code (PEC).</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div>
+          <h3 class="text-xl font-semibold primary-red mb-2">Mission</h3>
+          <p>Deliver precise, standards-compliant electrical designs that empower infrastructure, ensure safety, and foster technical excellence.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold primary-red mb-2">Vision</h3>
+          <p>To be a premier provider of electrical engineering and design services in the Philippines, recognized for innovation and professionalism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold royal-blue text-center mb-10">Our Engineering Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center text-sm md:text-base">
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="cpu" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">Load Analysis</h3>
+          <p>Connected loads, voltage drop, short circuit evaluation, and protection coordination.</p>
+        </div>
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="server-cog" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">Power Distribution Design</h3>
+          <p>Panelboards, riser diagrams, feeder schedules, and PEC-conforming circuit layouts.</p>
+        </div>
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="sun" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">Lighting Simulation</h3>
+          <p>Lighting layout and lux level studies using Dialux and Relux for energy efficiency and uniformity.</p>
+        </div>
+
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="file-text" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">CAD Drafting & Diagrams</h3>
+          <p>Complete CAD drawings of layouts, SLDs, schematics, and auxiliary systems.</p>
+        </div>
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="clipboard-list" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">BOQ / BOM & Estimation</h3>
+          <p>Detailed quantity take-offs and material costings using PlanSwift and Excel tools.</p>
+        </div>
+        <div class="p-4 border rounded shadow hover:scale-105 transition">
+          <i data-lucide="check-square" class="mx-auto mb-2 primary-red" width="32" height="32"></i>
+          <h3 class="text-lg font-bold primary-red mb-2">Permit Compliance</h3>
+          <p>Document preparation for permit application, including sign/seal support and PEC review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-royal-blue text-white text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+    <p class="mb-6">Book a consultation or request a free estimate — let’s bring your ideas to life.</p>
+    <div class="flex gap-4 justify-center">
+      <button onclick="toggleForm()" class="bg-red px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Book a Consultation Now</button>
+      <a href="projects.html" class="bg-white text-royal-blue px-6 py-3 rounded-full font-semibold hover:opacity-90 transition">View Projects</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12 bg-gray-100 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold primary-red mb-4">Contact Us</h2>
+      <p>📍 Barangay Tagapo, Sta. Rosa, Laguna, Philippines</p>
+      <p>📞 <a href="tel:+639283095807" class="underline hover:text-red-500">+63 928 309 5807</a></p>
+      <p>📧 <a href="mailto:pjdaet8@gmail.com" class="underline hover:text-red-500">pjdaet8@gmail.com</a></p>
+
+      <div class="flex justify-center flex-wrap gap-4 mt-6">
+        <a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="bg-[#0084FF] px-6 py-3 rounded-full font-semibold shadow">💬 Live Chat</a>
+        <a href="https://wa.me/639283095807" target="_blank" class="bg-green-500 px-6 py-3 rounded-full font-semibold shadow">📱 WhatsApp</a>
+        <a href="tel:+639283095807" class="bg-red px-6 py-3 rounded-full font-semibold shadow">📞 Call Us</a>
+      </div>
+
+      <div class="mt-6">
+        <a href="https://www.facebook.com/share/1ACfq657ak/?mibextid=wwXIfr" target="_blank" class="underline">🌐 Visit Our Facebook Page</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP & DIRECTIONS -->
+  <section class="py-12 bg-white text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-xl font-semibold royal-blue mb-4">Visit Our Office</h3>
+      <p class="mb-4">Barangay Tagapo, Sta. Rosa, Laguna</p>
+      <div class="rounded-lg overflow-hidden shadow">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15449.273476262657!2d121.1058285!3d14.2841865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd611af27be35d%3A0x6ff4ddf79d6fbe96!2sTagapo%2C%20Santa%20Rosa%2C%20Laguna!5e0!3m2!1sen!2sph!4v1718914294494!5m2!1sen!2sph"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="mt-4">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Tagapo,+Santa+Rosa,+Laguna,+Philippines" target="_blank" class="bg-red text-white px-6 py-3 rounded-full font-semibold">🚗 Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING MESSENGER -->
+  <a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="fixed bottom-6 right-6 bg-[#0084FF] text-white px-4 py-3 rounded-full shadow-lg z-50 flex items-center gap-2">
+    💬 <span class="hidden md:inline">Chat Live with Me</span>
+  </a>
+
+  <!-- FORM POPUP (used site-wide) -->
+  <div id="popupForm" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full shadow-lg text-black">
+      <h2 class="text-2xl font-bold mb-4">Request Form</h2>
+      <form action="https://formsubmit.co/pjdaet8@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_subject" value="New Consultation or Quotation Request!">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-2 border rounded" />
+        <input type="email" name="email" placeholder="Your Email Address" required class="w-full p-2 border rounded" />
+        <input type="text" name="project" placeholder="Project Type (e.g., Residential, Warehouse)" class="w-full p-2 border rounded" />
+        <textarea name="message" rows="4" placeholder="Your message or project requirements" class="w-full p-2 border rounded" required></textarea>
+        <div class="flex justify-between">
+          <button type="submit" class="bg-red text-white px-4 py-2 rounded hover:bg-red-600 transition">Send Message</button>
+          <button type="button" onclick="toggleForm()" class="text-sm text-gray-500 hover:underline">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">&copy; <span id="currentYear"></span> PM Integration and Engineering Design Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Toggle popup form
+    function toggleForm() {
+      document.getElementById('popupForm').classList.toggle('hidden');
+      document.getElementById('popupForm').classList.toggle('flex');
+    }
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Lucide icons
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

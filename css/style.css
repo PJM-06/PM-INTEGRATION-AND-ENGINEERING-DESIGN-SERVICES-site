@@ -1,0 +1,51 @@
+/* ===========================
+   Global Styles
+   =========================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --royal-blue: #002366;
+  --primary-red: #e63946;
+}
+
+/* Navigation */
+nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-red);
+  transition: width 0.3s ease;
+}
+nav a:hover::after { width: 100%; }
+
+/* Buttons */
+button, a.button {
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+button:hover, a.button:hover {
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.hero-text, .section-title { animation: fadeInUp 0.8s ease forwards; }
+.card, .popup { animation: popIn 0.5s ease forwards; }
+section { animation: fadeInUp 1s ease; }
