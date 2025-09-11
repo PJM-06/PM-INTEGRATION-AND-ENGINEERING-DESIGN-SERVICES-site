@@ -39,12 +39,28 @@
   </div>
 </nav>
 
-<!-- Featured Project Section -->
+<!-- Featured Project Section Updated with Slider -->
 <section class="py-16 bg-gray-100">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold royal-blue text-center mb-10">Featured Project</h2>
     <div class="grid md:grid-cols-2 gap-10 items-center">
-      <img src="warehouse_project.jpg" alt="Shopee Warehouse Project" class="rounded shadow transition hover:scale-105 duration-300">
+      <!-- Slider for featured images -->
+      <div class="relative w-full overflow-hidden rounded shadow">
+        <div id="featuredSlider" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <img src="warehouse_project.jpg" alt="Shopee Warehouse Project" class="w-full object-cover flex-shrink-0">
+          <!-- Slide 2 (add more if you have more images) -->
+          <img src="warehouse_project_1.jpg" alt="Shopee Warehouse Project - alternate view" class="w-full object-cover flex-shrink-0">
+        </div>
+        <!-- Slider Controls -->
+        <button onclick="prevFeatured()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10094;
+        </button>
+        <button onclick="nextFeatured()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10095;
+        </button>
+      </div>
+      <!-- Text part stays the same -->
       <div>
         <h3 class="text-xl font-semibold royal-blue mb-2">Shopee Warehouse – Lighting & Load Redesign</h3>
         <p><strong>Location:</strong> Calamba, Laguna</p>
@@ -53,6 +69,111 @@
     </div>
   </div>
 </section>
+
+<!-- Slider Script -->
+<script>
+  let featuredIndex = 0;
+  const featuredSlider = document.getElementById("featuredSlider");
+  const featuredSlides = featuredSlider.children;
+  const totalFeatured = featuredSlides.length;
+
+  function showFeatured(index) {
+    if (index >= totalFeatured) featuredIndex = 0;
+    else if (index < 0) featuredIndex = totalFeatured - 1;
+    else featuredIndex = index;
+    featuredSlider.style.transform = `translateX(${-featuredIndex * 100}%)`;
+  }
+  function nextFeatured() {
+    showFeatured(featuredIndex + 1);
+  }
+  function prevFeatured() {
+    showFeatured(featuredIndex - 1);
+  }
+
+  // Optional Auto-Rotate
+  setInterval(() => {
+    nextFeatured();
+  }, 5000);
+</script>
+
+
+<!-- 4-Storey Commercial Building Slider Section -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold royal-blue text-center mb-10">4-Storey Commercial Building</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Slider -->
+      <div class="relative w-full overflow-hidden rounded shadow">
+        <div id="commercialSlider" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <img src="commercial_project.jpg" alt="4-storey commercial building with retail spaces project" class="w-full object-cover flex-shrink-0">
+          <!-- Slide 2 -->
+          <img src="commercial_project_2.jpg" alt="4-storey commercial building with retail spaces project" class="w-full object-cover flex-shrink-0">
+        </div>
+        <!-- Slider Controls -->
+        <button onclick="prevCommercial()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10094;
+        </button>
+        <button onclick="nextCommercial()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10095;
+        </button>
+      </div>
+      
+      <!-- Text / Details -->
+      <div>
+        <h3 class="text-xl font-semibold royal-blue mb-2">Complete As-Built Plan & Analysis</h3>
+        <p><strong>Location:</strong> Santa Rosa, Laguna</p>
+        <p class="mt-2 text-gray-700">This 4-storey commercial building with retail spaces project includes a full as-built plan together with electrical load analysis, voltage drop & short-circuit studies, power distribution layout, and lighting design. All documentation prepared to support permitting and field execution.</p>
+        <ul class="list-disc pl-6 mt-4 text-gray-700 space-y-2">
+          <li>Full electrical layout of all four floors</li>
+          <li>Load schedule & feeder/branch circuit planning</li>
+          <li>Voltage drop & short-circuit evaluation per floor/panel</li>
+          <li>Lighting / lux level optimization and daylighting study</li>
+          <li>Power distribution layout and equipment placement</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-4">
+         
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slider Script -->
+<script>
+  let commercialIndex = 0;
+  const commercialSlider = document.getElementById("commercialSlider");
+  const commercialSlides = commercialSlider.children;
+  const totalCommercial = commercialSlides.length;
+
+  function showCommercial(index) {
+    if (index >= totalCommercial) commercialIndex = 0;
+    else if (index < 0) commercialIndex = totalCommercial - 1;
+    else commercialIndex = index;
+    commercialSlider.style.transform = `translateX(${-commercialIndex * 100}%)`;
+  }
+
+  function nextCommercial() {
+    showCommercial(commercialIndex + 1);
+  }
+  function prevCommercial() {
+    showCommercial(commercialIndex - 1);
+  }
+
+  // optional: auto rotate
+  setInterval(() => {
+    nextCommercial();
+  }, 5000);
+</script>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Thesis Prototyping Section -->
 <section class="py-16 bg-gray-100">
