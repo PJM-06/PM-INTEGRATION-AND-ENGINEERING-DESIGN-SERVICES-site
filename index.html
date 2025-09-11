@@ -10,41 +10,33 @@
   <!-- 🎨 Custom Color Palette -->
   <style>
     :root {
-      --royal-blue: #1e3a8a;       /* Deep Royal Blue */
-      --primary-red: #e11d48;      /* Strong Red */
-      --secondary-yellow: #facc15; /* Yellow Accent */
+      --royal-blue: #1e3a8a;
+      --primary-red: #e11d48;
+      --secondary-yellow: #facc15;
       --gray-light: #f9fafb;
     }
-
-    /* Utility classes */
     .royal-blue { color: var(--royal-blue); }
     .primary-red { color: var(--primary-red); }
     .bg-royal-blue { background-color: var(--royal-blue); }
     .bg-red { background-color: var(--primary-red); }
     .hover-bg-red:hover { background-color: #b91c1c; }
-
-    /* Darker red hover */
   </style>
 
-  <!-- ========== Open Graph / Social Preview ========== -->
-<meta property="og:title" content="PM Integration and Engineering Design Services">
-<meta property="og:description" content="Professional Electrical, Electronics, and Engineering Design Services by PM Integration.">
-<meta property="og:image" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/assets/logo.jpg">
-<meta property="og:url" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="PM Integration">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PM Integration and Engineering Design Services">
-<meta name="twitter:description" content="Professional Electrical, Electronics, and Engineering Design Services by PM Integration.">
-<meta name="twitter:image" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/assets/logo.jpg">
-
-
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="PM Integration and Engineering Design Services">
+  <meta property="og:description" content="Professional Electrical, Electronics, and Engineering Design Services by PM Integration.">
+  <meta property="og:image" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/assets/logo.jpg">
+  <meta property="og:url" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PM Integration">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PM Integration and Engineering Design Services">
+  <meta name="twitter:description" content="Professional Electrical, Electronics, and Engineering Design Services by PM Integration.">
+  <meta name="twitter:image" content="https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/assets/logo.jpg">
 </head>
 <body class="bg-white text-gray-900">
 
-<!-- Navbar -->
+<!-- ================= NAVBAR ================= -->
 <nav class="bg-white shadow-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
     <a href="index.html" class="text-xl font-bold royal-blue">PM Integration</a>
@@ -58,7 +50,7 @@
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- ================= HERO ================= -->
 <section class="relative text-center py-24 px-6 bg-gray-100">
   <div class="hero-text relative z-10">
     <h1 class="text-4xl md:text-5xl font-bold royal-blue mb-4">
@@ -67,56 +59,41 @@
     <p class="text-lg max-w-2xl mx-auto">
       Engineering precision meets creative design. We offer full-spectrum electrical and electronics solutions — from system design to implementation.
     </p>
-    <button onclick="toggleForm()" class="mt-6 bg-red px-6 py-3 rounded-full font-semibold text-white hover-bg-red transition">
+    <button onclick="openForm()" class="mt-6 bg-red px-6 py-3 rounded-full font-semibold text-white hover-bg-red transition">
       Request a Consultation
     </button>
   </div>
 </section>
 
-<!-- About Us -->
+<!-- ================= ABOUT ================= -->
 <section id="about" class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="section-title text-3xl font-bold royal-blue mb-6">About Us</h2>
-    <p class="mb-4">
-      <strong>PM Integration and Engineering Design Services</strong> is a dynamic, multi-disciplinary
-      engineering firm in the Philippines dedicated to providing innovative, reliable, and code-compliant electrical and electronics solutions. Our expertise spans across residential, commercial, and industrial projects, offering end-to-end services from conceptual planning to technical documentation and implementation support.
-    </p>
-    <p class="mb-4">
-      We specialize in <strong>Electrical Planning & Design</strong>, including load analysis (voltage drop, short-circuit evaluation, and protection coordination), <strong>Power Distribution Systems</strong> (panelboards, riser diagrams, feeder schedules, PEC-compliant layouts), and <strong>Lighting Layout & Simulation</strong> using Dialux and Relux. We also prepare <strong>Bill of Quantities (BOQ)</strong>, <strong>As-Built Drawings</strong>, and comprehensive <strong>Technical Specifications</strong> for compliance and accuracy.
-    </p>
-    <p class="mb-4">
-      Beyond core electrical works, we provide complete <strong>Integrated Systems</strong> solutions: Structured Cabling & Data Networks, Fire Detection & Alarm Systems (FDAS), CCTV & Security Systems, Access Control Systems, Public Address & Audio-Visual Systems, and Telecommunication Infrastructure.
-    </p>
-    <p class="mb-4">
-      Since 2021, PM Integration has successfully handled diverse projects such as residential electrical installations, commercial buildings, industrial facilities, and academic prototype developments. Each project is approached with precision, ensuring compliance with Philippine Electrical Code (PEC), international standards, and client-specific requirements.
-    </p>
-    <p>
-      Guided by our core values of <em>quality, integrity, innovation, and safety</em>, we strive to be a trusted partner in building sustainable, efficient, and future-ready systems that empower communities and businesses alike.
-    </p>
+    <p class="mb-4"><strong>PM Integration and Engineering Design Services</strong> is a dynamic, multi-disciplinary engineering firm in the Philippines dedicated to providing innovative, reliable, and code-compliant electrical and electronics solutions. Our expertise spans across residential, commercial, and industrial projects, offering end-to-end services from conceptual planning to technical documentation and implementation support.</p>
+    <p class="mb-4">We specialize in <strong>Electrical Planning & Design</strong>, including load analysis (voltage drop, short-circuit evaluation, and protection coordination), <strong>Power Distribution Systems</strong> (panelboards, riser diagrams, feeder schedules, PEC-compliant layouts), and <strong>Lighting Layout & Simulation</strong> using Dialux and Relux. We also prepare <strong>Bill of Quantities (BOQ)</strong>, <strong>As-Built Drawings</strong>, and comprehensive <strong>Technical Specifications</strong> for compliance and accuracy.</p>
+    <p class="mb-4">Beyond core electrical works, we provide complete <strong>Integrated Systems</strong> solutions: Structured Cabling & Data Networks, Fire Detection & Alarm Systems (FDAS), CCTV & Security Systems, Access Control Systems, Public Address & Audio-Visual Systems, and Telecommunication Infrastructure.</p>
+    <p class="mb-4">Since 2021, PM Integration has successfully handled diverse projects such as residential electrical installations, commercial buildings, industrial facilities, and academic prototype developments. Each project is approached with precision, ensuring compliance with Philippine Electrical Code (PEC), international standards, and client-specific requirements.</p>
+    <p>Guided by our core values of <em>quality, integrity, innovation, and safety</em>, we strive to be a trusted partner in building sustainable, efficient, and future-ready systems that empower communities and businesses alike.</p>
   </div>
 </section>
 
-<!-- Mission -->
+<!-- ================= MISSION ================= -->
 <section id="mission" class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="section-title text-3xl font-bold royal-blue mb-6">Our Mission</h2>
-    <p>
-      To deliver reliable, innovative, and sustainable engineering design and integration services that uphold safety, quality, and compliance. We aim to provide our clients with tailored solutions that exceed expectations, foster progress, and contribute to a more resilient and technologically advanced society.
-    </p>
+    <p>To deliver reliable, innovative, and sustainable engineering design and integration services that uphold safety, quality, and compliance. We aim to provide our clients with tailored solutions that exceed expectations, foster progress, and contribute to a more resilient and technologically advanced society.</p>
   </div>
 </section>
 
-<!-- Vision -->
+<!-- ================= VISION ================= -->
 <section id="vision" class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="section-title text-3xl font-bold royal-blue mb-6">Our Vision</h2>
-    <p>
-      To be a leading engineering design and integration services provider in the Philippines, recognized for our commitment to technical excellence, innovation, and sustainable solutions that shape the future of infrastructure and technology.
-    </p>
+    <p>To be a leading engineering design and integration services provider in the Philippines, recognized for our commitment to technical excellence, innovation, and sustainable solutions that shape the future of infrastructure and technology.</p>
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- ================= SERVICES ================= -->
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold royal-blue text-center mb-10">Our Engineering Services</h2>
@@ -155,7 +132,7 @@
   </div>
 </section>
 
-<!-- Training & Certifications Section -->
+<!-- ================= TRAINING & CERTIFICATIONS ================= -->
 <section class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <h2 class="text-3xl font-bold royal-blue mb-4">Training & Certifications</h2>
@@ -180,138 +157,118 @@
   </div>
 </section>
 
-<!-- Bottom CTA Section -->
+<!-- ================= BOTTOM CTA ================= -->
 <section class="py-16 bg-royal-blue text-white text-center">
   <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
   <p class="mb-6 text-lg">Book a consultation today or request a free estimate — let’s bring your ideas to life with precision and expertise.</p>
   <div class="space-x-4">
-    <button onclick="toggleForm()" class="bg-red px-6 py-3 rounded-full font-semibold hover-bg-red transition transform hover:scale-105">
+    <button onclick="openForm()" class="bg-red px-6 py-3 rounded-full font-semibold hover-bg-red transition transform hover:scale-105">
       Book a Consultation Now
     </button>
-    <button onclick="toggleForm()" class="bg-[var(--secondary-yellow)] text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition transform hover:scale-105">
+    <button onclick="openForm()" class="bg-[var(--secondary-yellow)] text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition transform hover:scale-105">
       Get a Free Estimate
     </button>
   </div>
 </section>
 
-<!-- Office Location Map -->
+<!-- ================= OFFICE LOCATION MAP ================= -->
 <section class="py-16 bg-gray-100 text-center">
   <h2 class="text-3xl font-bold royal-blue mb-6">Visit Our Office</h2>
   <p class="mb-6 text-gray-600">Barangay Tagapo, Sta. Rosa, Laguna, Philippines</p>
-
   <div class="flex justify-center">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15449.273476262657!2d121.1058285!3d14.2841865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd611af27be35d%3A0x6ff4ddf79d6fbe96!2sTagapo%2C%20Santa%20Rosa%2C%20Laguna!5e0!3m2!1sen!2sph!4v1718914294494!5m2!1sen!2sph"
-      width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15449.273476262657!2d121.1058285!3d14.2841865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd611af27be35d%3A0x6ff4ddf79d6fbe96!2sTagapo%2C%20Santa%20Rosa%2C%20Laguna!5e0!3m2!1sen!2sph!4v1718914294494!5m2!1sen!2sph" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
-  <!-- Directions Button -->
   <div class="mt-6">
-    <a href="https://www.google.com/maps/dir/?api=1&destination=Tagapo,+Santa+Rosa,+Laguna,+Philippines"
-       target="_blank"
-       class="bg-red text-white px-6 py-3 rounded-full font-semibold shadow hover-bg-red transition">
-       🚗 Get Directions
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Tagapo,+Santa+Rosa,+Laguna,+Philippines" target="_blank" class="bg-red text-white px-6 py-3 rounded-full font-semibold shadow hover-bg-red transition">
+      🚗 Get Directions
     </a>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="py-16 text-center bg-royal-blue text-white">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-[var(--primary-red)] mb-6">Contact Us</h2>
-
-    <!-- Location -->
     <p class="mb-2">📍 Barangay Tagapo, Sta. Rosa, Laguna, Philippines</p>
-
-    <!-- Phone -->
     <p class="mb-2">📞 <a href="tel:+639283095807" class="underline hover:text-red-300">+63 928 309 5807</a></p>
-
-    <!-- Email -->
     <p class="mb-6">📧 <a href="mailto:pjdaet8@gmail.com" class="underline hover:text-red-300">pjdaet8@gmail.com</a></p>
-
-    <!-- Contact Buttons -->
     <div class="flex justify-center flex-wrap gap-4 mt-6">
-      <a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank"
-         class="bg-[#0084FF] px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">
-        💬 Live Chat
-      </a>
-      <a href="https://wa.me/639283095807" target="_blank"
-         class="bg-green-500 px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition">
-        📱 WhatsApp
-      </a>
-      <a href="tel:+639283095807"
-         class="bg-[var(--primary-red)] px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700 transition">
-        📞 Call Us
-      </a>
+      <a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="bg-[#0084FF] px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">💬 Live Chat</a>
+      <a href="https://wa.me/639283095807" target="_blank" class="bg-green-500 px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition">📱 WhatsApp</a>
+      <a href="tel:+639283095807" class="bg-[var(--primary-red)] px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700 transition">📞 Call Us</a>
     </div>
-
-    <!-- FB Page -->
     <div class="mt-8">
-      <a href="https://www.facebook.com/share/1ACfq657ak/?mibextid=wwXIfr"
-         target="_blank"
-         class="underline hover:text-red-300 text-lg font-semibold">
-         🌐 Visit Our Facebook Page
-      </a>
+      <a href="https://www.facebook.com/share/1ACfq657ak/?mibextid=wwXIfr" target="_blank" class="underline hover:text-red-300 text-lg font-semibold">🌐 Visit Our Facebook Page</a>
     </div>
   </div>
 </section>
 
-<!-- Floating Messenger Bubble -->
-<a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank"
-   class="fixed bottom-6 right-6 bg-[#0084FF] text-white px-4 py-3 rounded-full shadow-lg hover:opacity-90 transition z-50 flex items-center gap-2">
-  💬 <span class="hidden md:inline">Chat Live with Me</span>
-</a>
+<!-- ================= FLOATING MESSENGER ================= -->
+<a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="fixed bottom-6 right-6 bg-[#0084FF] text-white px-4 py-3 rounded-full shadow-lg hover:opacity-90 transition z-50 flex items-center gap-2">💬 <span class="hidden md:inline">Chat Live with Me</span></a>
 
-<!-- Scripts -->
-<script>
-  function toggleForm() {
-    document.getElementById('popupForm').classList.toggle('hidden');
-  }
-  lucide.createIcons();
-</script>
-
-<!-- Popup Form -->
-<div id="popupForm" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50">
-  <div class="bg-white rounded-2xl shadow-lg max-w-lg w-full p-8 relative">
-    <!-- Close Button -->
-    <button onclick="toggleForm()" class="absolute top-4 right-4 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
-
-    <h2 class="text-2xl font-bold text-[var(--royal-blue)] mb-6">📩 Inquire Now</h2>
-
+<!-- ================= POPUP FORM ================= -->
+<div id="popupForm" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+  <div class="bg-white rounded-xl w-full max-w-lg p-8 relative shadow-lg">
+    <button onclick="closeForm()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-2xl">&times;</button>
+    <h2 class="text-2xl font-bold royal-blue mb-4 text-center">Client Inquiry Form</h2>
     <form action="https://formspree.io/f/meolndaj" method="POST" class="space-y-4">
-      <!-- Name -->
       <div>
-        <label class="block text-sm font-medium text-gray-700">Your Name</label>
-        <input type="text" name="name" required 
-               class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--primary-red)] focus:outline-none">
+        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Full Name" required
+               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
       </div>
-
-      <!-- Email -->
       <div>
-        <label class="block text-sm font-medium text-gray-700">Your Email</label>
-        <input type="email" name="_replyto" required 
-               class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--primary-red)] focus:outline-none">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com" required
+               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
       </div>
-
-      <!-- Message -->
       <div>
-        <label class="block text-sm font-medium text-gray-700">Message</label>
-        <textarea name="message" rows="4" required 
-                  class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--primary-red)] focus:outline-none"></textarea>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="+63 912 345 6789"
+               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
       </div>
-
-      <!-- Submit -->
-      <button type="submit" 
-              class="bg-red text-white px-6 py-3 rounded-full font-semibold hover-bg-red transition w-full">
-        🚀 Send Inquiry
-      </button>
+      <div>
+        <label for="project" class="block text-sm font-medium text-gray-700">Project / Inquiry Details</label>
+        <textarea name="project" id="project" rows="4" placeholder="Tell us about your project or inquiry..." required
+                  class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit"
+                class="bg-royal-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition transform hover:scale-105">
+          Submit Inquiry
+        </button>
+      </div>
+      <input type="hidden" name="_autoresponse" value="Hello [Client Name], Thank you for reaching out! We appreciate your interest in PM Integration and Engineering Design Services. Our team will review your message and get back to you shortly. Best regards, The PM Integration Team">
+      <input type="hidden" name="_subject" value="New Inquiry from Website">
     </form>
   </div>
 </div>
 
-</body>
-</html>
+<!-- ================= SCRIPTS ================= -->
+<script>
+  const popupForm = document.getElementById('popupForm');
+
+  function openForm() {
+    popupForm.classList.remove('hidden');
+  }
+
+  function closeForm() {
+    popupForm.classList.add('hidden');
+  }
+
+  // Close popup if clicking outside
+  popupForm.addEventListener('click', e => {
+    if (e.target === popupForm) closeForm();
+  });
+
+  // Close popup on ESC key
+  document.addEventListener('keydown', e => {
+    if (e.key === "Escape") closeForm();
+  });
+
+  // Lucide icons
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
