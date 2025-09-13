@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pjm-06.github.io/PM-INTERGRATION-AND-ENGINEERING-DESIGN-SERVICES-site/sitemap.xml
