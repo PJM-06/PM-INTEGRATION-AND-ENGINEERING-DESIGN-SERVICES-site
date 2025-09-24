@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Testimonials - PM Integration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --royal-blue: #1e3a8a;
+      --primary-red: #e11d48;
+      --secondary-yellow: #facc15;
+    }
+    .royal-blue { color: var(--royal-blue); }
+    .primary-red { color: var(--primary-red); }
+    .bg-royal-blue { background-color: var(--royal-blue); }
+    .bg-red { background-color: var(--primary-red); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="index.html" class="text-xl font-bold royal-blue">PM Integration</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-[var(--primary-red)]">Home</a>
+        <a href="index.html#about" class="hover:text-[var(--primary-red)]">About</a>
+        <a href="index.html#services" class="hover:text-[var(--primary-red)]">Services</a>
+        <a href="projects.html" class="hover:text-[var(--primary-red)]">Projects</a>
+        <a href="Feedbacks.html" class="text-[var(--primary-red)] font-bold">Feedbacks</a>
+        <a href="index.html#contact" class="hover:text-[var(--primary-red)]">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex items-center text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-white shadow-md">
+      <a href="index.html" class="block hover:text-[var(--primary-red)]">Home</a>
+      <a href="index.html#about" class="block hover:text-[var(--primary-red)]">About</a>
+      <a href="index.html#services" class="block hover:text-[var(--primary-red)]">Services</a>
+      <a href="projects.html" class="block hover:text-[var(--primary-red)]">Projects</a>
+      <a href="Feedbacks.html" class="block hover:text-[var(--primary-red)]">Feedbacks</a>
+      <a href="index.html#contact" class="block hover:text-[var(--primary-red)]">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="text-center py-20 bg-royal-blue text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">What Our Clients Say</h1>
+    <p class="max-w-2xl mx-auto text-lg text-gray-200">
+      Real stories from our clients, partners, contractors, and students about their experience with PM Integration and Engineering Design Services.
+    </p>
+  </section>
+
+  <!-- ELECTRICAL & AUX TESTIMONIES -->
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold royal-blue mb-10 text-center">Electrical & Auxiliary Designs Testimonials</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Testimonial Template -->
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] 
+                  transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Engr. Don</h4>
+        <p class="text-sm text-gray-500 mb-4">Project Partner</p>
+        <p class="italic text-gray-700">“PM Integration delivered our commercial building electrical design with precision. Highly professional and reliable.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="5.0"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] 
+                  transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Maria S.</h4>
+        <p class="text-sm text-gray-500 mb-4">Commercial Client</p>
+        <p class="italic text-gray-700">“Their lighting simulation exceeded expectations. Our workplace became brighter and energy-efficient.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.8"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] 
+                  transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Carlos R.</h4>
+        <p class="text-sm text-gray-500 mb-4">Contractor</p>
+        <p class="italic text-gray-700">“From BOQ preparation to permit requirements, the process was smooth and efficient.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.6"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Liza T.</h4>
+        <p class="text-sm text-gray-500 mb-4">Residential Owner</p>
+        <p class="italic text-gray-700">“My home electrical layout was delivered flawlessly, making everything safe and organized.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.9"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Joey B.</h4>
+        <p class="text-sm text-gray-500 mb-4">Architect Partner</p>
+        <p class="italic text-gray-700">“PM Integration seamlessly partnered with us to turn architectural concepts into reality.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.7"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Mark V.</h4>
+        <p class="text-sm text-gray-500 mb-4">Commercial Contractor</p>
+        <p class="italic text-gray-700">“Their structured cabling and auxiliary system designs were on point and well-coordinated.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.5"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Ella G.</h4>
+        <p class="text-sm text-gray-500 mb-4">Residential Client</p>
+        <p class="italic text-gray-700">“The auxiliary designs improved our home’s safety and connectivity. Very satisfied.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.3"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Jason L.</h4>
+        <p class="text-sm text-gray-500 mb-4">Project Engineer</p>
+        <p class="italic text-gray-700">“They provided complete and detailed drawings that made execution much easier.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.4"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Sophia D.</h4>
+        <p class="text-sm text-gray-500 mb-4">Contractor</p>
+        <p class="italic text-gray-700">“Very responsive team, quick turnaround, and great results for electrical and auxiliary works.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.2"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THESIS TESTIMONIES -->
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold royal-blue mb-10 text-center">Thesis Project Testimonials</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Anna R.</h4>
+        <p class="text-sm text-gray-500 mb-4">Engineering Student</p>
+        <p class="italic text-gray-700">“Our prototype design and documentation were well-guided from Chapter 1 to 5. Truly reliable support.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.9"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Paolo C.</h4>
+        <p class="text-sm text-gray-500 mb-4">Student Leader</p>
+        <p class="italic text-gray-700">“They guided us through our thesis defense preparation and prototype wiring design.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.8"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Kevin L.</h4>
+        <p class="text-sm text-gray-500 mb-4">BS ECE Student</p>
+        <p class="italic text-gray-700">“We finished our documentation on time because of their technical guidance.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.7"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Rachel M.</h4>
+        <p class="text-sm text-gray-500 mb-4">Computer Engineering Student</p>
+        <p class="italic text-gray-700">“Our thesis prototype worked smoothly. The step-by-step guidance was a huge help.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.6"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Miguel T.</h4>
+        <p class="text-sm text-gray-500 mb-4">ECE Thesis Team</p>
+        <p class="italic text-gray-700">“They helped us polish Chapters 3–5 with accurate technical analysis and diagrams.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.5"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Diana S.</h4>
+        <p class="text-sm text-gray-500 mb-4">Engineering Student</p>
+        <p class="italic text-gray-700">“Their documentation support allowed us to submit a well-prepared final thesis manuscript.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.4"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Eric G.</h4>
+        <p class="text-sm text-gray-500 mb-4">Prototype Builder</p>
+        <p class="italic text-gray-700">“We got excellent guidance for our prototype testing and troubleshooting.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.3"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Janelle F.</h4>
+        <p class="text-sm text-gray-500 mb-4">Thesis Coordinator</p>
+        <p class="italic text-gray-700">“PM Integration consistently provides dependable technical support for student thesis projects.”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.2"></div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[var(--primary-red)] transition transform hover:-translate-y-2 hover:shadow-2xl">
+        <h4 class="font-bold royal-blue">Leo M.</h4>
+        <p class="text-sm text-gray-500 mb-4">Final Year Student</p>
+        <p class="italic text-gray-700">“Our defense panel was impressed with the technical depth of our thesis. Thank you for the help!”</p>
+        <div class="flex mt-4 text-yellow-400 rating" data-rating="4.0"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BACK TO HOME -->
+  <section class="py-16 bg-royal-blue text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+    <p class="mb-6 max-w-2xl mx-auto text-lg">Let’s collaborate and turn your vision into reality with expert engineering solutions tailored to your needs.</p>
+    <a href="index.html#contact" 
+       class="bg-[var(--secondary-yellow)] text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-400 transition transform hover:scale-105">
+       📩 Contact Us
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 bg-gray-100 text-gray-600">
+    © 2025 PM Integration and Engineering Design Services. All rights reserved.
+  </footer>
+
+  <!-- Script for Star Ratings -->
+  <script>
+    function renderStars(rating) {
+      const fullStars = Math.floor(rating);
+      const halfStar = rating % 1 >= 0.5;
+      let stars = '';
+
+      for (let i = 0; i < fullStars; i++) {
+        stars += '★';
+      }
+      if (halfStar) stars += '☆';
+      while (stars.length < 5) {
+        stars += '☆';
+      }
+      return stars;
+    }
+
+    document.querySelectorAll('.rating').forEach(el => {
+      const rating = parseFloat(el.getAttribute('data-rating'));
+      el.textContent = renderStars(rating);
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
