@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +59,7 @@
       <a href="index.html#about" class="hover:text-[var(--primary-red)]">About</a>
       <a href="index.html#services" class="hover:text-[var(--primary-red)]">Services</a>
       <a href="projects.html" class="hover:text-[var(--primary-red)]">Projects</a>
+      <a href="feedbacks.html" class="hover:text-[var(--primary-red)]">Testimonials</a> <!-- ✅ NEW -->
       <a href="index.html#contact" class="hover:text-[var(--primary-red)]">Contact</a>
     </div>
   </div>
@@ -217,77 +220,27 @@
     <div class="mt-8">
       <a href="https://www.facebook.com/share/1ACfq657ak/?mibextid=wwXIfr" target="_blank" class="underline hover:text-red-300 text-lg font-semibold">🌐 Visit Our Facebook Page</a>
     </div>
+    <div class="mt-4">
+      <a href="feedbacks.html" class="underline hover:text-red-300 text-lg font-semibold">⭐ See Client Testimonials</a> <!-- ✅ NEW -->
+    </div>
   </div>
 </section>
 
 <!-- ================= FLOATING MESSENGER ================= -->
-<a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="fixed bottom-6 right-6 bg-[#0084FF] text-white px-4 py-3 rounded-full shadow-lg hover:opacity-90 transition z-50 flex items-center gap-2">💬 <span class="hidden md:inline">Chat Live with Me</span></a>
+<a href="https://m.me/PJM-Electrical-Designs-and-Engineering-Services" target="_blank" class="fixed bottom-6 right-6 bg-[#0084FF] text-white px-4 py-3 rounded-full shadow-lg hover:opacity-90 transition z-50">
+  💬 Chat with Us
+</a>
 
-<!-- ================= POPUP FORM ================= -->
-<div id="popupForm" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-  <div class="bg-white rounded-xl w-full max-w-lg p-8 relative shadow-lg">
-    <button onclick="closeForm()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-2xl">&times;</button>
-    <h2 class="text-2xl font-bold royal-blue mb-4 text-center">Client Inquiry Form</h2>
-    
-    <!-- ✅ Updated to new Formspree endpoint -->
-    <form action="https://formspree.io/f/xandkqvn" method="POST" class="space-y-4">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Full Name" required
-               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-        <input type="email" name="email" id="email" placeholder="you@example.com" required
-               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
-      </div>
-      <div>
-        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-        <input type="tel" name="phone" id="phone" placeholder="+63 912 345 6789"
-               class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue">
-      </div>
-      <div>
-        <label for="project" class="block text-sm font-medium text-gray-700">Project / Inquiry Details</label>
-        <textarea name="project" id="project" rows="4" placeholder="Tell us about your project or inquiry..." required
-                  class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-royal-blue focus:border-royal-blue"></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit"
-                class="bg-royal-blue text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition transform hover:scale-105">
-          Submit Inquiry
-        </button>
-      </div>
-
-      <!-- ✅ Email subject + autoresponse preserved -->
-      <input type="hidden" name="_autoresponse" value="Hello [Client Name], Thank you for reaching out! We appreciate your interest in PM Integration and Engineering Design Services. Our team will review your message and get back to you shortly. Best regards, The PM Integration Team">
-      <input type="hidden" name="_subject" value="New Inquiry from Website">
-    </form>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-6 text-center">
+  <p>&copy; 2025 PM Integration and Engineering Design Services. All Rights Reserved.</p>
+  <div class="mt-2">
+    <a href="feedbacks.html" class="underline hover:text-red-300">Client Testimonials</a> <!-- ✅ NEW -->
   </div>
-</div>
+</footer>
 
-<!-- ================= SCRIPTS ================= -->
+<!-- ================= JS ================= -->
 <script>
-  const popupForm = document.getElementById('popupForm');
-
-  function openForm() {
-    popupForm.classList.remove('hidden');
-  }
-
-  function closeForm() {
-    popupForm.classList.add('hidden');
-  }
-
-  // Close popup if clicking outside
-  popupForm.addEventListener('click', e => {
-    if (e.target === popupForm) closeForm();
-  });
-
-  // Close popup on ESC key
-  document.addEventListener('keydown', e => {
-    if (e.key === "Escape") closeForm();
-  });
-
-  // Lucide icons
   lucide.createIcons();
 </script>
 
