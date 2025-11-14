@@ -62,19 +62,38 @@
 <body class="bg-white text-gray-900">
 
 <!-- ================= NAVBAR ================= -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
-    <a href="index.html" class="text-xl font-bold royal-blue">PM Integration</a>
-    <div class="space-x-6 hidden md:flex">
-      <a href="index.html" class="hover:text-[var(--primary-red)]">Home</a>
-      <a href="index.html#about" class="hover:text-[var(--primary-red)]">About</a>
-      <a href="index.html#services" class="hover:text-[var(--primary-red)]">Services</a>
-      <a href="projects.html" class="hover:text-[var(--primary-red)]">Projects</a>
-      <a href="feedbacks.html" class="hover:text-[var(--primary-red)]">Feedbacks</a>
-      <a href="index.html#contact" class="hover:text-[var(--primary-red)]">Contact</a>
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="index.html" class="text-xl font-bold royal-blue">PM Integration</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-[var(--primary-red)]">Home</a>
+        <a href="index.html#about" class="hover:text-[var(--primary-red)]">About</a>
+        <a href="index.html#services" class="hover:text-[var(--primary-red)]">Services</a>
+        <a href="projects.html" class="hover:text-[var(--primary-red)]">Projects</a>
+        <a href="feedbacks.html" class="hover:text-[var(--primary-red)]">Feedbacks</a>
+        <a href="index.html#contact" class="hover:text-[var(--primary-red)]">Contact</a>
+      </div>
+      <!-- mobile menu button (kept simple) -->
+      <div class="md:hidden">
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="menu" class="p-2 rounded-md bg-gray-100">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
     </div>
-  </div>
-</nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-2">
+        <a href="index.html" class="block">Home</a>
+        <a href="index.html#about" class="block">About</a>
+        <a href="index.html#services" class="block">Services</a>
+        <a href="projects.html" class="block">Projects</a>
+        <a href="feedbacks.html" class="block">Feedbacks</a>
+        <a href="index.html#contact" class="block">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
 
 <!-- ================= HERO (Electrical Circuit Background) ================= -->
 <section class="relative text-white">
