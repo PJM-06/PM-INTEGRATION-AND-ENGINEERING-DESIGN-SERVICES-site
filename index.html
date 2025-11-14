@@ -76,20 +76,51 @@
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="relative text-center py-24 px-6 bg-gray-100">
-  <div class="hero-text relative z-10">
-    <h1 class="text-4xl md:text-5xl font-bold royal-blue mb-4">
+<!-- ================= HERO (Electrical Circuit Background) ================= -->
+<section class="relative text-white">
+  <div class="absolute inset-0 -z-10">
+    <img
+      src="assets/hero-bg.jpg"
+      alt="Electrical circuit board background"
+      class="w-full h-full object-cover hero-img"
+    />
+    <div class="absolute inset-0 hero-overlay"></div>
+  </div>
+
+  <div class="relative z-10 text-center py-28 px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold royal-blue text-white drop-shadow-lg">
       PM INTEGRATION AND ENGINEERING DESIGN SERVICES
     </h1>
-    <p class="text-lg max-w-2xl mx-auto">
+    <div class="decorative-line"></div>
+    <p class="text-lg max-w-2xl mx-auto text-gray-100">
       Engineering precision meets creative design. We offer full-spectrum electrical and electronics solutions — from system design to implementation.
     </p>
-    <button onclick="openForm()" class="mt-6 bg-red px-6 py-3 rounded-full font-semibold text-white hover-bg-red transition">
-      Request a Consultation
-    </button>
+    <div class="mt-6 flex justify-center gap-4">
+      <button onclick="openForm()" class="accent-btn px-6 py-3 rounded-full font-semibold transition transform hover:-translate-y-0.5">
+        Request a Consultation
+      </button>
+      <a href="index.html#contact" class="bg-white/10 px-6 py-3 rounded-full font-semibold border border-white/20">
+        Contact Us
+      </a>
+    </div>
   </div>
 </section>
+
+<!-- ================= HERO CUSTOM STYLING ================= -->
+<style>
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 8, 20, 0.35) 0%,
+      rgba(4, 8, 20, 0.55) 100%
+    );
+  }
+
+  .hero-img {
+    filter: brightness(0.9) contrast(1.15) saturate(1.2);
+  }
+</style>
+
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="py-16 bg-gray-50">
