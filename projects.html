@@ -186,40 +186,25 @@
 
     <div class="grid md:grid-cols-2 gap-10 items-center text-left">
       
-      <!-- Image Slider -->
-      <div class="relative w-full overflow-hidden rounded shadow">
-        <div id="thesisSlider" class="flex transition-transform duration-500">
+      <!-- Shopee-Style Infinite Image Slider -->
+      <div class="relative w-full overflow-hidden rounded shadow bg-white">
+        <div class="flex gap-6 animate-scroll items-center">
 
-          <!-- Slide 1 -->
-          <img src="thesis1.jpg"
-               alt="Thesis Prototyping Project 1"
-               class="min-w-full object-cover">
-
-          <!-- Slide 2 -->
-          <img src="thesis2.jpg"
-               alt="Thesis Prototyping Project 2"
-               class="min-w-full object-cover">
+          <!-- Original Projects -->
+          <img src="thesis1.jpg" class="h-64 object-cover rounded">
+          <img src="thesis2.jpg" class="h-64 object-cover rounded">
 
           <!-- NEW COMPLETED PROJECT -->
-          <img src="thesis3.jpg"
-               alt="Completed Thesis Project – Prototype Turnover"
-               class="min-w-full object-cover">
+          <img src="thesis3.jpg" class="h-64 object-cover rounded">
+          <img src="thesis4.jpg" class="h-64 object-cover rounded">
 
-          <img src="thesis4.jpg"
-               alt="Completed Thesis Project – Team with Working Prototype"
-               class="min-w-full object-cover">
+          <!-- Duplicate for seamless loop -->
+          <img src="thesis1.jpg" class="h-64 object-cover rounded">
+          <img src="thesis2.jpg" class="h-64 object-cover rounded">
+          <img src="thesis3.jpg" class="h-64 object-cover rounded">
+          <img src="thesis4.jpg" class="h-64 object-cover rounded">
 
         </div>
-
-        <!-- Slider Buttons -->
-        <button onclick="prevSlide()" 
-                class="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
-          &#10094;
-        </button>
-        <button onclick="nextSlide()" 
-                class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
-          &#10095;
-        </button>
       </div>
 
       <!-- Text content -->
@@ -237,8 +222,8 @@
           <li><strong>Electrical:</strong> Renewable energy systems, smart energy, sustainable solutions.</li>
           <li><strong>Electronics:</strong> Arduino, ESP32, Raspberry Pi, sensors, IoT, PCB design.</li>
           <li><strong>Mechanical:</strong> Motor control, automation, robotics, fabrication.</li>
-          <li><strong>Documentation:</strong> Chapter 1–5 full thesis write-up.</li>
-          <li><strong>Consultation & Mentorship:</strong> Defense-ready guidance.</li>
+          <li><strong>Documentation:</strong> Full thesis write-up (Chapter 1–5).</li>
+          <li><strong>Consultation & Mentorship:</strong> Defense-ready technical guidance.</li>
         </ul>
 
         <div class="mt-6 flex flex-wrap gap-4">
@@ -256,30 +241,6 @@
   </div>
 </section>
 
-<!-- Slider Script -->
-<script>
-  let thesisIndex = 0;
-  const thesisSlider = document.getElementById("thesisSlider");
-  const thesisSlides = thesisSlider.children;
-
-  function showSlide(index) {
-    if (index >= thesisSlides.length) thesisIndex = 0;
-    if (index < 0) thesisIndex = thesisSlides.length - 1;
-    thesisSlider.style.transform = `translateX(${-thesisIndex * 100}%)`;
-  }
-
-  function nextSlide() {
-    thesisIndex++;
-    showSlide(thesisIndex);
-  }
-
-  function prevSlide() {
-    thesisIndex--;
-    showSlide(thesisIndex);
-  }
-
-  setInterval(nextSlide, 5000);
-</script>
 
 
       <!-- Text content -->
