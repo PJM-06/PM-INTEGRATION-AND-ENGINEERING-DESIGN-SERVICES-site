@@ -178,34 +178,93 @@
 
 <!-- Thesis Prototyping Section -->
 <section class="py-16 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold royal-blue mb-4">Thesis Prototyping</h2>
-    <p class="text-lg text-gray-700 mb-10 italic">
-      “From Research Paper to Working Prototype – We’ve Got You Covered”
-    </p>
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold royal-blue text-center mb-10">Thesis Prototyping</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
 
-    <div class="grid md:grid-cols-2 gap-10 items-center text-left">
-      
-      <!-- Shopee-Style Infinite Image Slider -->
+      <!-- Slider -->
       <div class="relative w-full overflow-hidden rounded shadow bg-white">
-        <div class="flex gap-6 animate-scroll items-center">
+        <div id="thesisSlider" class="flex transition-transform duration-500">
+          <img src="thesis1.jpg" alt="Thesis Project 1" class="w-full object-cover flex-shrink-0">
+          <img src="thesis2.jpg" alt="Thesis Project 2" class="w-full object-cover flex-shrink-0">
+          <img src="thesis3.jpg" alt="Thesis Project 3" class="w-full object-cover flex-shrink-0">
+          <img src="thesis4.jpg" alt="Thesis Project 4" class="w-full object-cover flex-shrink-0">
+        </div>
 
-          <!-- Original Projects -->
-          <img src="thesis1.jpg" class="h-64 object-cover rounded">
-          <img src="thesis2.jpg" class="h-64 object-cover rounded">
+        <!-- Slider Controls -->
+        <button onclick="prevThesis()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10094;
+        </button>
+        <button onclick="nextThesis()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#10095;
+        </button>
+      </div>
 
-          <!-- NEW COMPLETED PROJECT -->
-          <img src="thesis3.jpg" class="h-64 object-cover rounded">
-          <img src="thesis4.jpg" class="h-64 object-cover rounded">
+      <!-- Text content -->
+      <div>
+        <p class="text-lg text-gray-700 mb-6 italic">
+          “From Research Paper to Working Prototype – We’ve Got You Covered”
+        </p>
 
-          <!-- Duplicate for seamless loop -->
-          <img src="thesis1.jpg" class="h-64 object-cover rounded">
-          <img src="thesis2.jpg" class="h-64 object-cover rounded">
-          <img src="thesis3.jpg" class="h-64 object-cover rounded">
-          <img src="thesis4.jpg" class="h-64 object-cover rounded">
+        <h3 class="text-xl font-semibold royal-blue mb-2">
+          Academic & Research Prototype Development
+        </h3>
+        <p class="mt-2 text-gray-700">
+          We help students and researchers transform their academic concepts into fully working prototypes. 
+          Our team covers <strong>Electrical, Electronics, and Mechanical</strong> systems, ensuring your project 
+          is technically sound and ready for thesis defense or real-world application.
+        </p>
 
+        <ul class="list-disc pl-6 mt-4 text-gray-700 space-y-2">
+          <li><strong>Electrical:</strong> Renewable energy systems, smart energy, sustainable solutions.</li>
+          <li><strong>Electronics:</strong> Arduino, ESP32, Raspberry Pi, sensors, IoT, PCB design.</li>
+          <li><strong>Mechanical:</strong> Motor control, automation, robotics, fabrication.</li>
+          <li><strong>Documentation:</strong> Full thesis write-up (Chapter 1–5).</li>
+          <li><strong>Consultation & Mentorship:</strong> Defense-ready technical guidance.</li>
+        </ul>
+
+        <div class="mt-6 flex flex-wrap gap-4">
+          <button onclick="toggleForm()" 
+                  class="bg-royal-blue px-6 py-3 rounded-full font-semibold text-white hover:bg-blue-900 transition transform hover:scale-105">
+            🚀 Start Your Thesis Prototype with Us
+          </button>
+          <button onclick="toggleForm()" 
+                  class="bg-[var(--secondary-yellow)] text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition transform hover:scale-105">
+            📑 Request Full Thesis Package
+          </button>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Thesis Slider Script -->
+<script>
+  let thesisIndex = 0;
+  const thesisSlider = document.getElementById("thesisSlider");
+  const thesisSlides = thesisSlider.children;
+  const totalThesis = thesisSlides.length;
+
+  function showThesis(index) {
+    if (index >= totalThesis) thesisIndex = 0;
+    else if (index < 0) thesisIndex = totalThesis - 1;
+    else thesisIndex = index;
+    thesisSlider.style.transform = `translateX(${-thesisIndex * 100}%)`;
+  }
+
+  function nextThesis() {
+    showThesis(thesisIndex + 1);
+  }
+
+  function prevThesis() {
+    showThesis(thesisIndex - 1);
+  }
+
+  // Auto-rotate every 5 seconds
+  setInterval(() => {
+    nextThesis();
+  }, 5000);
+</script>
 
       <!-- Text content -->
       <div>
