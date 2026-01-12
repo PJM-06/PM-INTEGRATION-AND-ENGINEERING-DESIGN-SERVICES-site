@@ -190,18 +190,24 @@
       <div class="relative w-full overflow-hidden rounded shadow">
         <div id="thesisSlider" class="flex transition-transform duration-500">
 
-          <!-- Existing Projects -->
-          <img src="thesis1.jpg" alt="Thesis Prototyping Project 1" class="w-full object-cover">
-          <img src="thesis2.jpg" alt="Thesis Prototyping Project 2" class="w-full object-cover">
+          <!-- Slide 1 -->
+          <img src="thesis1.jpg"
+               alt="Thesis Prototyping Project 1"
+               class="min-w-full object-cover">
 
-          <!-- NEWLY COMPLETED PROJECT (INSERTED) -->
-          <img src="thesis3.jpg" 
-               alt="Completed Thesis Project – Prototype Turnover and Field Deployment" 
-               class="w-full object-cover">
+          <!-- Slide 2 -->
+          <img src="thesis2.jpg"
+               alt="Thesis Prototyping Project 2"
+               class="min-w-full object-cover">
 
-          <img src="thesis4.jpg" 
-               alt="Completed Thesis Project – Team with Fully Functional Prototype" 
-               class="w-full object-cover">
+          <!-- NEW COMPLETED PROJECT -->
+          <img src="thesis3.jpg"
+               alt="Completed Thesis Project – Prototype Turnover"
+               class="min-w-full object-cover">
+
+          <img src="thesis4.jpg"
+               alt="Completed Thesis Project – Team with Working Prototype"
+               class="min-w-full object-cover">
 
         </div>
 
@@ -215,6 +221,66 @@
           &#10095;
         </button>
       </div>
+
+      <!-- Text content -->
+      <div>
+        <h3 class="text-xl font-semibold royal-blue mb-2">
+          Academic & Research Prototype Development
+        </h3>
+        <p class="mt-2">
+          We help students and researchers transform their academic concepts into fully working prototypes. 
+          Our team covers <strong>Electrical, Electronics, and Mechanical</strong> systems, ensuring your project 
+          is technically sound and ready for thesis defense or real-world application.
+        </p>
+
+        <ul class="list-disc pl-6 mt-4 text-gray-700 space-y-2">
+          <li><strong>Electrical:</strong> Renewable energy systems, smart energy, sustainable solutions.</li>
+          <li><strong>Electronics:</strong> Arduino, ESP32, Raspberry Pi, sensors, IoT, PCB design.</li>
+          <li><strong>Mechanical:</strong> Motor control, automation, robotics, fabrication.</li>
+          <li><strong>Documentation:</strong> Chapter 1–5 full thesis write-up.</li>
+          <li><strong>Consultation & Mentorship:</strong> Defense-ready guidance.</li>
+        </ul>
+
+        <div class="mt-6 flex flex-wrap gap-4">
+          <button onclick="toggleForm()" 
+                  class="bg-royal-blue px-6 py-3 rounded-full font-semibold text-white hover:bg-blue-900 transition transform hover:scale-105">
+            🚀 Start Your Thesis Prototype with Us
+          </button>
+          <button onclick="toggleForm()" 
+                  class="bg-[var(--secondary-yellow)] text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition transform hover:scale-105">
+            📑 Request Full Thesis Package
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slider Script -->
+<script>
+  let thesisIndex = 0;
+  const thesisSlider = document.getElementById("thesisSlider");
+  const thesisSlides = thesisSlider.children;
+
+  function showSlide(index) {
+    if (index >= thesisSlides.length) thesisIndex = 0;
+    if (index < 0) thesisIndex = thesisSlides.length - 1;
+    thesisSlider.style.transform = `translateX(${-thesisIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    thesisIndex++;
+    showSlide(thesisIndex);
+  }
+
+  function prevSlide() {
+    thesisIndex--;
+    showSlide(thesisIndex);
+  }
+
+  setInterval(nextSlide, 5000);
+</script>
+
 
       <!-- Text content -->
       <div>
